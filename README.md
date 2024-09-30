@@ -3,7 +3,8 @@ Code for “Learning Music Audio Representations with Limited Data”.
 
 ### Overview
 ***What happens when we train music audio representation models with very limited data?***
-![image][(https://github.com/chrispla/limited-music-representations/blob/main/figures/overview.png)
+
+<img src="figures/overview.png" width="500" alt="overview">
 
 We train
 * MusiCNN with tagging
