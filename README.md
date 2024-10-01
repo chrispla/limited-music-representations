@@ -4,25 +4,27 @@ Code for “Learning Music Audio Representations with Limited Data”.
 ### Overview
 ***What happens when we train music audio representation models with very limited data?***
 
-<img src="figures/overview.png" width="500" alt="overview">
+<img src="figures/overview.png" width="450" alt="overview">
 
-We train
-* MusiCNN with tagging
-- VGGish with tagging
-- AST with tagging
--  CLMR with self-supervised contrastive learning
-- TMAE, a transformer-based masked autoencoder
-on subsets of the MagnaTagATune music dataset, ranging from 5 to ~8000 minutes.
+We train the following models on subsets of the MagnaTagATune music dataset, ranging from **5** to **~8000** minutes.
+
+| Name | Architecture | Param. | Emb. Dim. | Input len. | Input feat. | Mel bins | Paradigm |
+|------|--------------|--------|-------------------|--------|---------|----------|----------|
+| VGGish | CNN | 3.7m | 512 | 3.75s | mel spec. | 128 | Tagging |
+| MusiCNN | CNN | 12.0m | 200 | 3.00s | mel spec. | 96 | Tagging |
+| AST | Transformer | 87.0m | 768 | 5.12s | mel spec. | 128 | Tagging |
+| CLMR | CNN | 2.5m | 512 | 2.68s | waveform | - | SSL Contrastive |
+| TMAE | Transformer | 7.2m | 256 | 4.85s | mel spec. | 96 | SSL Masked Modeling |
 
 We extract representations from each, along with untrained models, and train downstream models on
-* music tagging
+- music tagging
 - monophonic pitch detection
 - monophonic instrument recognition
 
 We show that, in certain cases,
-* the representations from untrained and minimally-trained models perform comparatively to those from “fully-trained” models
+- the representations from untrained and minimally-trained models perform comparatively to those from “fully-trained” models
 - larger downstream models are able to "recover" performance from untrained and minimally-trained representations
-- the inherent robustness of representations to noise is bad accross the board
+- the inherent robustness of representations to noise is bad across the board
 - the performance gap to "hand-crafted" features is still significant in pitch and instrument recognition
 
 ### Reproduction
