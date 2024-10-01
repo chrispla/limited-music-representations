@@ -1,7 +1,7 @@
 # Learning music audio representations with limited data
 Code for “Learning Music Audio Representations with Limited Data”.
 
-### Overview
+## Overview
 ***What happens when we train music audio representation models with very limited data?***
 
 <img src="figures/overview.png" width="450" alt="overview">
@@ -27,7 +27,7 @@ We show that, in certain cases,
 - the inherent robustness of representations to noise is bad across the board
 - the performance gap to "hand-crafted" features is still significant in pitch and instrument recognition
 
-### Reproduction
+## Reproduction
 #### 1. Requirement installation:
 ```bash
 pip install -r requirements.txt
