@@ -14,7 +14,7 @@ We train the following models on subsets of the MagnaTagATune music dataset, ran
 | **MusiCNN** | CNN | 12.0m | 200 | 3.00s | mel spec. | 96 | Tagging |
 | **AST** | Transformer | 87.0m | 768 | 5.12s | mel spec. | 128 | Tagging |
 | **CLMR** | CNN | 2.5m | 512 | 2.68s | waveform | - | SSL Contrastive |
-| **TMAE** | Transformer | 7.2m | 256 | 4.85s | mel spec. | 96 | SSL Masked Modeling |
+| **TMAE** | Transformer | 7.2m | 256 | 4.85s | mel spec. | 96 | SSL Masked |
 
 We extract representations from each, along with untrained models, and train downstream models on
 - music tagging
