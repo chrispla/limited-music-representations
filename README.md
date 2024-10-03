@@ -36,7 +36,7 @@ pip install -r requirements.txt
 #### 2. Pretraining:
 MagnaTagATune will be downloaded automatically if it's not already present in `data/MTAT`. Each model has a training script, which can be run with:
 ```bash
-python model_name/train.py
+python train.py --model model_name
 ```
 where `model_name` is one of `musicnn`, `vggish`, `ast`, `clmr`, or `tmae`.
 
