@@ -55,3 +55,5 @@ where `model_name` is one of `musicnn`, `vggish`, `ast`, `clmr`, or `tmae`, and 
 
 #### 5. Visualization
 See visualization notebooks.
+
+Additional figures are available in [additional_results.md](additional_results.md).
