@@ -57,3 +57,5 @@ where `model_name` is one of `musicnn`, `vggish`, `ast`, `clmr`, or `tmae`, and 
 See visualization notebooks.
 
 Additional figures are available in [additional_results.md](additional_results.md).
+
+The raw results can be found under `raw_results/`. `model-0` is the SLP, and `model-1` the MLP. `deform_0` is AWGN 15 dB SNR, `deform_1` is AWGN 0 dB SNR, and `deform_2` is Gain -12 dB.
